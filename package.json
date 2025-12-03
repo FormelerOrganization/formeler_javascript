@@ -1,0 +1,40 @@
+{
+  "name": "formeler",
+  "version": "1.0.0",
+  "description": "Formeler SDK for Javascript",
+  "type": "module",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "jsnext:main": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "pnpm rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formeler/formeler_javasript.git"
+  },
+  "keywords": [
+    "Formeler",
+    "LangID",
+    "Language",
+    "Detection"
+  ],
+  "author": "Formeler <hi@formeler.com> (https://formeler.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/formeler/formeler_javasript/issues"
+  },
+  "homepage": "https://formeler.com/lang-id/doc/",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-replace": "^6.0.3",
+    "rollup": "^4.53.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
