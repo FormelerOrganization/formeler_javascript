@@ -31,7 +31,14 @@ try {
     console.log("Something went wrong: ", error);
 }
 ```
-
+If the API call is successful,the `result` variable will contain the following JSON response:
+```json
+{
+  "result": "success",
+  "language": "de",
+  "tokenCount": "4"
+}
+```
 ### `batchDetect`
 
 ```js
@@ -42,7 +49,17 @@ try {
     console.log("Something went wrong: ", error);
 }
 ```
-
+If the API call is successful,the `result` variable will contain the following JSON response:
+```json
+{
+  "result": "success",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tokenCount": "8"
+}
+```
 ### More Example
 
 You can find additional examples in the `examples` directory of this repository.
@@ -58,7 +75,13 @@ If a network issue arises, the call will throw an error that you can catch using
 ### API errors
 
 The Formeler API may return an error in the response. You can identify these by checking the `result` field in the returned object.
-
+An error response will follow this structure:
+```json
+{
+  "result": "failed",
+  "message": "unauthorized"
+}
+```
 ## TypeScript
 
 This package includes TypeScript declarations for the Formeler SDK.
