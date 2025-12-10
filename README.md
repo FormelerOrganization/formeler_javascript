@@ -1,7 +1,6 @@
-# Formeler Javascript SDK as CommonJS module or ES module
+# Formeler JavasScript SDK as CommonJS module or ES module
 
-This repository contains source code of Formeler Javascript SDK.
-
+First, please check the documentation (https://formeler.com/lang-id/doc/) page to familiarize yourself with the basics of the API.
 ## Installation
 
 Install the Formeler module using `npm`:
@@ -13,7 +12,7 @@ npm install formeler
 
 ### `Formeler` Class
 
-The `Formeler` class initializes the connection to the Formeler server. To get started, create a new instance of `Formeler` and pass your API key as the first argument to the constructor.
+The `Formeler` class initializes the connection to the Formeler server. To get started, create a new instance of `Formeler` and pass your API key as the first argument to the constructor. You can obtain a fresh API key from the [website](https://formeler.com/lang-id/overview/) that includes 10M tokens of free credit.
 ```js
 import {Formeler} from "formeler";
 const formeler = new Formeler("YOUR-API-KEY");
@@ -31,7 +30,7 @@ try {
     console.log("Something went wrong: ", error);
 }
 ```
-If the API call is successful,the `result` variable will contain the following JSON response:
+If the API call is successful, the `result` variable will contain the following JSON response:
 ```json
 {
   "result": "success",
@@ -49,7 +48,7 @@ try {
     console.log("Something went wrong: ", error);
 }
 ```
-If the API call is successful,the `result` variable will contain the following JSON response:
+If the API call is successful, the `result` variable will contain the following JSON response:
 ```json
 {
   "result": "success",
@@ -68,11 +67,11 @@ You can find additional examples in the `examples` directory of this repository.
 
 Two types of errors may occur when calling SDK methods:
 
-### Network errors
+### Network Errors
 
 If a network issue arises, the call will throw an error that you can catch using a try/catch block.
 
-### API errors
+### API Errors
 
 The Formeler API may return an error in the response. You can identify these by checking the `result` field in the returned object.
 An error response will follow this structure:
