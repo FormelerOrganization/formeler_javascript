@@ -24,7 +24,7 @@
   "author": "Formeler <hi@formeler.com> (https://formeler.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/formeler/formeler_javasript/issues"
+    "url": "https://github.com/FormelerOrganization/formeler_javascript/issues"
   },
   "homepage": "https://formeler.com/lang-id/doc/",
   "devDependencies": {
