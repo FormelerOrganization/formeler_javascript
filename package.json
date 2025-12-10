@@ -1,6 +1,6 @@
 {
   "name": "formeler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Formeler SDK for Javascript",
   "type": "module",
   "main": "lib/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FormelerOrganization/formeler_javascript"
+    "url": "git+https://github.com/FormelerOrganization/formeler_javascript.git"
   },
   "keywords": [
     "Formeler",
